@@ -33,10 +33,14 @@ $$I(\lambda) = \int T(\lambda') f(v) dv'$$
 To find the most accurate value for $\sigma$, the algorithm minimizes the weighted difference between the observed galaxy spectrum $G(\lambda)$ and the synthetic model $M(\lambda)$:
 $$\chi^2 = \sum \left[ \frac{G(\lambda) - M(\lambda)}{\text{error}} \right]^2$$
 
-## Key Features
-- **Spectral Synthesis:** Processing of stellar populations to model galactic light.
-- **Kinematic Analysis:** Toolsets for measuring velocity dispersion in galactic and active nuclei.
-- **Uncertainty Quantification:** Built-in modules for error analysis in spectral fitting.
+
+
+## Research Artifacts & Checklist
+To ensure scientific reproducibility, this repository includes:
+- [x] **Mathematical Logic:** Full implementation of $\chi^2$ minimization and Gaussian broadening.
+- [x] **Citations:** Professional BibTeX and DOI tracking.
+- [ ] **Data Sample:** (Planned) Spectra of targeted galaxies like the NGC clusters analyzed.
+- [ ] **License:** MIT Open Source compliance.
 
 ## Citation
 If you utilize this algorithm in your research, please cite the following publication:
@@ -56,3 +60,23 @@ If you utilize this algorithm in your research, please cite the following public
   publisher={Scientific Research Publishing},
   doi={10.4236/ijaa.2022.121005}
 }
+---
+
+### **Final Step: Adding the Metadata**
+To make your repository "searchable" for other astronomers, do the following on your GitHub page:
+
+1.  **Create `CITATION.cff`**: Create this file in your root folder and paste this:
+    ```yaml
+    cff-version: 1.2.0
+    message: "If you use this software, please cite it as below."
+    authors:
+    - family-names: "Barua"
+      given-names: "Nick"
+    title: "Starlight Synthesis Algorithm"
+    doi: 10.4236/ijaa.2022.121005
+    date-released: 2022-03-03
+    ```
+2.  **Add Topics**: On the right sidebar, click the gear next to "About" and add these tags:
+    `astrophysics`, `galaxy-evolution`, `kinematics`, `black-holes`, `starlight`.
+
+**Would you like me to create a "Sample Results" table listing the specific velocity dispersions ($\sigma$) for galaxies like NGC 1297 or NGC 5044 to showcase the algorithm's output?**
