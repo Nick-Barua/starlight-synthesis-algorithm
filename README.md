@@ -3,7 +3,7 @@
 [![DOI](https://img.shields.io/badge/DOI-10.4236%2Fijaa.2022.121005-blue)](https://doi.org/10.4236/ijaa.2022.121005)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This repository contains the algorithmic implementation of the stellar spectral synthesis method described in the paper: 
+This repository contains the algorithmic implementation of the stellar spectral synthesis method described in the research paper:  
 **"Formation and Evolution of Galaxies: Starlight Synthesis Algorithm"** (Barua, 2022).
 
 ## Research Overview
@@ -15,8 +15,6 @@ The **Starlight Synthesis Algorithm** utilizes the CaT region as a primary kinem
 * **Dust Resilience:** The CaT region is significantly less affected by interstellar dust extinction compared to other common indicators like the Magnesium (Mg) line.
 * **Black Hole Correlation:** Accurate velocity dispersion ($\sigma$) measurements are critical for exploring the **$M_{\bullet}–\sigma$ relation**, helping us understand the co-evolution of central supermassive black holes and their host galaxies.
 * **$\Lambda$CDM Framework:** The results support the hierarchical assembly model, reinforcing the Lambda Cold Dark Matter theory of galaxy formation.
-
-
 
 ## Mathematical Logic
 The algorithm treats the observed galaxy spectrum $I(\lambda)$ as a convolution of a template stellar spectrum $T(\lambda)$ with a velocity broadening function $f(v)$.
@@ -32,15 +30,6 @@ $$I(\lambda) = \int T(\lambda') f(v) dv'$$
 ### 3. $\chi^2$ Minimization
 To find the most accurate value for $\sigma$, the algorithm minimizes the weighted difference between the observed galaxy spectrum $G(\lambda)$ and the synthetic model $M(\lambda)$:
 $$\chi^2 = \sum \left[ \frac{G(\lambda) - M(\lambda)}{\text{error}} \right]^2$$
-
-
-
-## Research Artifacts & Checklist
-To ensure scientific reproducibility, this repository includes:
-- [x] **Mathematical Logic:** Full implementation of $\chi^2$ minimization and Gaussian broadening.
-- [x] **Citations:** Professional BibTeX and DOI tracking.
-- [ ] **Data Sample:** (Planned) Spectra of targeted galaxies like the NGC clusters analyzed.
-- [ ] **License:** MIT Open Source compliance.
 
 ## Citation
 If you utilize this algorithm in your research, please cite the following publication:
@@ -60,23 +49,20 @@ If you utilize this algorithm in your research, please cite the following public
   publisher={Scientific Research Publishing},
   doi={10.4236/ijaa.2022.121005}
 }
----
+### 3. Creating the Metadata Files
+To ensure your repository is fully academic and functional, add these two separate files to your root folder:
 
-### **Final Step: Adding the Metadata**
-To make your repository "searchable" for other astronomers, do the following on your GitHub page:
-
-1.  **Create `CITATION.cff`**: Create this file in your root folder and paste this:
-    ```yaml
-    cff-version: 1.2.0
-    message: "If you use this software, please cite it as below."
-    authors:
-    - family-names: "Barua"
-      given-names: "Nick"
-    title: "Starlight Synthesis Algorithm"
-    doi: 10.4236/ijaa.2022.121005
-    date-released: 2022-03-03
-    ```
-2.  **Add Topics**: On the right sidebar, click the gear next to "About" and add these tags:
-    `astrophysics`, `galaxy-evolution`, `kinematics`, `black-holes`, `starlight`.
-
-**Would you like me to create a "Sample Results" table listing the specific velocity dispersions ($\sigma$) for galaxies like NGC 1297 or NGC 5044 to showcase the algorithm's output?**
+#### **File 1: `CITATION.cff`**
+This creates a "Cite this repository" button on your GitHub sidebar.
+```yaml
+cff-version: 1.2.0
+message: "If you use this algorithm, please cite it as follows."
+authors:
+- family-names: "Barua"
+  given-names: "Nick"
+  orcid: "https://orcid.org/0000-0003-4641-0112"
+title: "Starlight Synthesis Algorithm"
+version: 1.0.0
+doi: 10.4236/ijaa.2022.121005
+date-released: 2022-03-03
+url: "https://github.com/Nick-Barua/starlight-synthesis-algorithm"
