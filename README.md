@@ -1,12 +1,12 @@
 # Formation and Evolution of Galaxies: Starlight Synthesis Algorithm
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey?style=flat-square)](https://creativecommons.org/licenses/by/4.0/)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue?style=flat-square)](https://opensource.org/licenses/Apache-2.0)
 [![Journal: IJAA](https://img.shields.io/badge/Journal-IJAA_SCIRP-blue?style=flat-square)](https://www.scirp.org/journal/ijaa)
 [![DOI](https://img.shields.io/badge/DOI-10.4236%2Fijaa.2022.121005-blue?style=flat-square)](https://doi.org/10.4236/ijaa.2022.121005)
 [![Published](https://img.shields.io/badge/Published-March_2022-green?style=flat-square)](https://www.scirp.org/journal/paperinformation?paperid=115643)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--4641--0112-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0000-0003-4641-0112)
 
-> **Author:** Dr. Nick Barua · Swift Xi Inc., Kobe City, Japan
+> **Author:** Dr. Nick Barua · AN Holdings Co., Nishinomiya City, Hyogo, Japan
 > **Published:** *International Journal of Astronomy and Astrophysics (IJAA)*, Vol. 12, No. 1, pp. 68–93, March 2022
 > **DOI:** [10.4236/ijaa.2022.121005](https://doi.org/10.4236/ijaa.2022.121005)
 > 📄 **Downloads:** 392 · **Views:** 2,405
@@ -132,6 +132,7 @@ Star Formation History Recovery
 | `figures/` | Faber-Jackson plots, BPT diagrams, χ² curves |
 | `notebooks/` | Jupyter notebooks for analysis and visualization |
 | `requirements.txt` | Python dependencies |
+| `CITATION.cff` | Machine-readable citation file |
 | `README.md` | Project documentation |
 
 ---
@@ -176,5 +177,4 @@ pip install -r requirements.txt
 
 ## 📜 License
 
-This work is published under **Creative Commons Attribution 4.0 International (CC BY 4.0)** — as per SCIRP open access policy.
-See [creativecommons.org/licenses/by/4.0](https://creativecommons.org/licenses/by/4.0/) for details.
+This project is licensed under the **Apache 2.0 License** — see the [LICENSE](LICENSE) file for details.
