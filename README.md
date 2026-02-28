@@ -6,7 +6,7 @@
 [![Published](https://img.shields.io/badge/Published-March_2022-green?style=flat-square)](https://www.scirp.org/journal/paperinformation?paperid=115643)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--4641--0112-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0000-0003-4641-0112)
 
-> **Author:** Dr. Nick Barua · AN Holdings Co., Nishinomiya City, Hyogo, Japan
+> **Author:Nick Barua 
 > **Published:** *International Journal of Astronomy and Astrophysics (IJAA)*, Vol. 12, No. 1, pp. 68–93, March 2022
 > **DOI:** [10.4236/ijaa.2022.121005](https://doi.org/10.4236/ijaa.2022.121005)
 > 📄 **Downloads:** 392 · **Views:** 2,405
@@ -39,18 +39,27 @@ The **Starlight Synthesis Algorithm** is applied to **354,992 galaxies** from th
 
 ### 1. Starlight Synthesis Model
 
-The observed spectrum $O_\lambda$ is modeled as a convex combination of base elements:
-
-$$M_\lambda = M_{\lambda_0} \left[ \sum_{j=1}^{N*} x_j T_{j,\lambda} r_\lambda \right] \otimes G(v_*, \sigma_*)$$
+The observed spectrum *O*ₗₐₘbda is modeled as a convex combination of base elements:
+```
+Mλ = Mλ₀ · [ Σⱼ xⱼ · Tⱼλ · rλ ] ⊗ G(v*, σ*)
+```
 
 where:
-- $M_\lambda$ — synthetic spectrum
-- $M_{\lambda_0}$ — normalization factor at wavelength $\lambda_0$
-- $T_{j,\lambda}$ — spectrum of the $j$th base component
-- $x_j$ — fractional contribution of each base component
-- $r_\lambda \equiv 10^{-0.4(A_\lambda - A_{\lambda_0})}$ — dust extinction term
-- $G(v_*, \sigma_*)$ — Gaussian distribution of line-of-sight velocities
-- $\otimes$ — convolution operator
+- **Mλ** — synthetic spectrum
+- **Mλ₀** — normalization factor at wavelength λ₀
+- **Tⱼ,λ** — spectrum of the j-th base component
+- **xⱼ** — fractional contribution of each base component
+- **rλ ≡ 10^(−0.4·(Aλ − Aλ₀))** — dust extinction term
+- **G(v\*, σ\*)** — Gaussian distribution of line-of-sight velocities
+- **⊗** — convolution operator
+
+### 2. Chi-Squared Minimization
+
+$$\chi^2 = \sum_\lambda \left[ (O_\lambda - M_\lambda) w_\lambda \right]^2$$
+
+### 3. Doppler Broadening
+
+$$\Delta\lambda \sim \frac{\lambda_0 \sigma}{c}$$
 
 ### 2. Chi-Squared Minimization
 
