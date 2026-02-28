@@ -39,9 +39,9 @@ The **Starlight Synthesis Algorithm** is applied to **354,992 galaxies** from th
 
 ### 1. Starlight Synthesis Model
 
-The observed spectrum *O*ₗₐₘbda is modeled as a convex combination of base elements:
+The observed spectrum is modeled as a convex combination of base elements:
 ```
-Mλ = Mλ₀ · [ Σⱼ xⱼ · Tⱼλ · rλ ] ⊗ G(v*, σ*)
+Mλ = Mλ₀ · [ Σⱼ xⱼ · Tⱼ,λ · rλ ] ⊗ G(v*, σ*)
 ```
 
 where:
@@ -55,30 +55,22 @@ where:
 
 ### 2. Chi-Squared Minimization
 
-$$\chi^2 = \sum_\lambda \left[ (O_\lambda - M_\lambda) w_\lambda \right]^2$$
+The best fit minimizes χ² between the observed and synthetic spectra:
+```
+χ² = Σλ [ (Oλ − Mλ) · wλ ]²
+```
 
-### 3. Doppler Broadening
-
-$$\Delta\lambda \sim \frac{\lambda_0 \sigma}{c}$$
-
-### 2. Chi-Squared Minimization
-
-The best fit minimizes $\chi^2$ between the observed and synthetic spectra:
-
-$$\chi^2 = \sum_\lambda \left[ (O_\lambda - M_\lambda) w_\lambda \right]^2$$
-
-where $w_\lambda$ is the inverse of the noise in $O_\lambda$. The **Metropolis algorithm** with simulated annealing prevents convergence to local minima.
+where **wλ** is the inverse of the noise in Oλ.
+The **Metropolis algorithm** with simulated annealing prevents convergence to local minima.
 
 ### 3. Doppler Broadening
 
 Stellar velocity dispersion is inferred from spectral line broadening:
+```
+Δλ ≈ (λ₀ · σ) / c
+```
 
-$$\Delta\lambda \sim \frac{\lambda_0 \sigma}{c}$$
-
-where $\lambda_0$ is the central wavelength and $c$ is the speed of light.
-
----
-
+where λ₀ is the central wavelength and c is the speed of light.
 ## 📊 Dataset & Observations
 
 | Parameter | Details |
