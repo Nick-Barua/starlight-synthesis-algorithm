@@ -6,7 +6,7 @@
 [![Published](https://img.shields.io/badge/Published-March_2022-green?style=flat-square)](https://www.scirp.org/journal/paperinformation?paperid=115643)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0003--4641--0112-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0000-0003-4641-0112)
 
-> **Author:Nick Barua 
+> **Author:** Dr. Nick Barua · AN Holdings Co., Nishinomiya City, Hyogo, Japan
 > **Published:** *International Journal of Astronomy and Astrophysics (IJAA)*, Vol. 12, No. 1, pp. 68–93, March 2022
 > **DOI:** [10.4236/ijaa.2022.121005](https://doi.org/10.4236/ijaa.2022.121005)
 > 📄 **Downloads:** 392 · **Views:** 2,405
@@ -60,8 +60,7 @@ The best fit minimizes χ² between the observed and synthetic spectra:
 χ² = Σλ [ (Oλ − Mλ) · wλ ]²
 ```
 
-where **wλ** is the inverse of the noise in Oλ.
-The **Metropolis algorithm** with simulated annealing prevents convergence to local minima.
+where **wλ** is the inverse of the noise in Oλ. The **Metropolis algorithm** with simulated annealing prevents convergence to local minima.
 
 ### 3. Doppler Broadening
 
@@ -71,6 +70,9 @@ Stellar velocity dispersion is inferred from spectral line broadening:
 ```
 
 where λ₀ is the central wavelength and c is the speed of light.
+
+---
+
 ## 📊 Dataset & Observations
 
 | Parameter | Details |
